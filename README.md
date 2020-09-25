@@ -71,26 +71,25 @@ Directory Structure
 * Clone this repository
 * Open the repository and make  
 ```
-cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/catkin_ws/
+cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/
+catkin_make clean
 catkin_make
 ```
-* Launch my_robot/my_gokart in Gazebo to load both the world and plugins  
+* Launch my_robot in Gazebo to load both the world and plugins  
 ```
 roslaunch my_robot world.launch
 ```  
-or  
-```
-roslaunch my_gokart world.launch
-```  
+
+
 * Launch ball_chaser and process_image nodes  
 ```
-cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/catkin_ws/
+cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/
 source devel/setup.bash
 roslaunch ball_chaser ball_chaser.launch
 ```  
 * Visualize  
 ```
-cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/catkin_ws/
+cd /home/workspace/RoboND-Term1-P2-Go-Chase-It/
 source devel/setup.bash
 rosrun rqt_image_view rqt_image_view  
 ```  
